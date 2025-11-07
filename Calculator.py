@@ -27,7 +27,7 @@ def test(a, b, c):
 
 def power():
     try:
-        base = float(e.get())
+        base = int(e.get())
         e.delete(0, END)
         e.insert(END, str(base) + "^")
     except ValueError:
@@ -36,7 +36,7 @@ def power():
 
 def modulus():
     try:
-        num1 = float(e.get())
+        num1 = int(e.get())
         e.delete(0, END)
         e.insert(END, str(num1) + "%")
     except ValueError:
@@ -47,7 +47,7 @@ def button_equal():
     try:
         calculation = e.get()
         if "^" in calculation:
-            base, exponent = map(float, calculation.split("^"))
+            base, exponent = map(int, calculation.split("^"))
             result = base ** exponent
         elif "%" in calculation:
             num1, num2 = map(float, calculation.split("%"))
@@ -69,7 +69,7 @@ def button_backspace():
 def memory_add():
     global memory_value
     try:
-        memory_value += float(e.get())
+        memory_value += int(e.get())
     except ValueError:
         e.delete(0, END)
         e.insert(END, "Error")
@@ -77,7 +77,7 @@ def memory_add():
 def memory_subtract():
     global memory_value
     try:
-        memory_value -= float(e.get())
+        memory_value -= int(e.get())
     except ValueError:
         e.delete(0, END)
         e.insert(END, "Error")
@@ -94,7 +94,7 @@ def memory_clear():
 
 def square():
     try:
-        result = float(e.get()) ** 2
+        result = int(e.get()) ** 2
         e.delete(0, END)
         e.insert(END, str(result))
     except ValueError:
@@ -106,7 +106,7 @@ def square():
 
 def square_root():
     try:
-        result = math.sqrt(float(e.get()))
+        result = math.sqrt(int(e.get()))
         e.delete(0, END)
         e.insert(END, str(result))
     except ValueError:
@@ -115,7 +115,7 @@ def square_root():
         
 def cube_root():
     try:
-        result = math.cbrt(float(e.get()))
+        result = math.cbrt(int(e.get()))
         e.delete(0,END)
         e.insert(END,str(result))
     except ValueError:
