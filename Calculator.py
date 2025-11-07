@@ -130,16 +130,16 @@ def clear_history():
 
 
 # Button configuration
-button_memory_add = Button(root, text="M+", width=10, height=3, bg="purple", fg="green", command=memory_add)
-button_memory_subtract = Button(root, text="M-", width=10, height=3, bg="purple", fg="green", command=memory_subtract)
-button_memory_recall = Button(root, text="MR", width=10, height=3, bg="purple", fg="green", command=memory_recall)
-button_memory_clear = Button(root, text="MC", width=10, height=3, bg="purple", fg="green", command=memory_clear)
-button_square = Button(root, text="x^2", width=10, height=3, bg="purple", fg="green", command=square)
-button_square_root = Button(root, text="sqrt", width=10, height=3, bg="purple", fg="green", command=square_root)
-button_history = Button(root, text="History", width=10, height=3, bg="purple", fg="green", command=recall_history)
-button_clear_history = Button(root, text="Clear History", width=10, bg="purple", fg="green", height=3, command=clear_history)
-button_power = Button(root, text="x^y", width=10, height=3, bg="purple", fg="green", command=power)
-button_modulus = Button(root, text="%", width=10, height=3, bg="purple", fg="green", command=modulus)
+button_memory_add = Button(root, text="M+", width=10, height=3, bg="black", fg="green", command=memory_add)
+button_memory_subtract = Button(root, text="M-", width=10, height=3, bg="black", fg="green", command=memory_subtract)
+button_memory_recall = Button(root, text="MR", width=10, height=3, bg="black", fg="green", command=memory_recall)
+button_memory_clear = Button(root, text="MC", width=10, height=3, bg="black", fg="green", command=memory_clear)
+button_square = Button(root, text="x^2", width=10, height=3, bg="black", fg="green", command=square)
+button_square_root = Button(root, text="sqrt", width=10, height=3, bg="black", fg="green", command=square_root)
+button_history = Button(root, text="History", width=10, height=3, bg="black", fg="green", command=recall_history)
+button_clear_history = Button(root, text="Clear History", width=10, bg="black", fg="green", height=3, command=clear_history)
+button_power = Button(root, text="x^y", width=10, height=3, bg="black", fg="green", command=power)
+button_modulus = Button(root, text="%", width=10, height=3, bg="black", fg="green", command=modulus)
 
 button_1 = Button(root, text="1", width=10, height=3, bg="purple", fg="green", command=lambda: button_click(1))
 button_2 = Button(root, text="2", width=10, height=3, bg="purple", fg="green", command=lambda: button_click(2))
