@@ -131,6 +131,14 @@ def recall_history():
     Label(e.history_window, text=history_text).pack()
 
 def clear_history():
+    def percentage():
+    try:
+        result = float(e.get()) / 100
+        e.delete(0, END)
+        e.insert(END, str(result))
+    except ValueError:
+        e.delete(0, END)
+        e.insert(END, "Error")
     global calculation_history
     calculation_history = []
     history_window = Tk()
