@@ -220,3 +220,5 @@ button_decimal_place.grid(row=8, column=1, columnspan=1)
 sumofthree=test(1,4,7)
 print(sumofthree)
 root.mainloop()
+
+#Done With It Fosho
